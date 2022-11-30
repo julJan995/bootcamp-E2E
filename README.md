@@ -4,23 +4,9 @@
 
 1. Clone this repository to your workstation.
 2. Navigate to the project root.
-3. Check ```package.json``` file to make sure ```yarn test``` command will trigger test execution
-4. Make sure you have Babel installed to properly compile JS files. If not, use ```yarn add --dev @babel/core @babel/cli @babel/preset-env @babel/register``` command
-5. Check ```babel.config.js```file to make sure it contains followed setup:
-```
-module.exports = {
-    presets: [
-        ['@babel/preset-env', {
-            targets: {
-                node: '14'
-            }
-        }]
-    ]
-}
-```
-
+3. Run ```yarn install``` to install all dependencies.
 ## Test running
-1. Run ```yarn install``` to install all dependencies.
+1. Check ```package.json``` file to make sure ```yarn test``` command will trigger test execution
 2. Run ```yarn test``` to check test command output.
 
 The console output will show you the result.
