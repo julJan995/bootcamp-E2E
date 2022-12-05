@@ -16,4 +16,4 @@ Feature: Bootcamp E2E
     When I click on the Today's Best Deals tab
     And I am redirected to the Today's Best Deals page
     Then I click on the Internet page logo
-    And I am back on the home page
+    And I am on the home page

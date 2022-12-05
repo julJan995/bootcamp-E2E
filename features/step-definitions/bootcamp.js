@@ -8,7 +8,7 @@ Given("I am on the home page", async() => {
 
 Given("I can close the promo banner if it appears", async() => {
    try {
-        await bannerSelector.waitForExist({ timeout: 4000 });
+        await bannerSelector.waitForExist();
         await bannerBtnCloseSelector.click();
     } catch (error) {
         console.log('Promo banner was not displayed');
@@ -42,8 +42,4 @@ When("I am redirected to the Today's Best Deals page", async() => {
 Then("I click on the Internet page logo", async() => {
     const logoSelector = await $(`a[href="${homePage}/"]`);
     await logoSelector.click();
-});
-
-Then("I am back on the home page", async() => {
-    await browser.url(homePage);
 });
